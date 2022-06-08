@@ -1,0 +1,67 @@
+{
+  "button_text.default" : {
+    "message" : "Atšaukti prenumeratą",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Mygtuko tekstas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "El. laiškų prenumeratos atsisakymas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Antraštė",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.default" : {
+    "message" : "Jūsų el. pašto adresas:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.label" : {
+    "message" : "El. pašto įvesties pagalbos tekstas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.default" : {
+    "message" : "email@example.com",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.label" : {
+    "message" : "El. pašto įvesties vietos rezervavimo ženklo tekstas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_simple_subscription_clone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

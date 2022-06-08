@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "ส่วนหัว",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "ข้อความส่วนหัว",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "หากนี่ไม่ใช่อีเมลของคุณ โปรดเพิกเฉยหน้านี้ เนื่องจากเป็นไปได้อย่างยิ่งว่าอีเมลที่เกี่ยวข้องกับหน้านี้ได้ถูกส่งต่อถึงคุณ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "ส่วนหัวย่อย",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "คุณอัปเดตการตั้งค่าอีเมลของคุณเรียบร้อยแล้ว",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "ข้อความอัปเดตการติดตาม",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "คุณได้ยกเลิกการติดตามรับข้อมูลจากทุกอีเมลเรียบร้อยแล้ว",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "ข้อความการยกเลิกการติดตาม",
+    "description" : "",
+    "placeholders" : null
+  }
+}

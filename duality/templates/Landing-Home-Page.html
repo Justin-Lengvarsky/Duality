@@ -1,0 +1,442 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing page
+  screenshotPath: ../images/template-previews/landing-page.png
+-->
+{% extends './layouts/base.html' %}
+{% block header %}
+<div id="#top"></div>
+<div style="height: 10vh">
+  {% global_partial path='./partials/header-duality.html' %}
+</div>
+{% endblock header %}
+
+{% require_js %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="module">
+  
+  $(document).ready(function () {
+  'use strict';
+   var c, currentScrollTop = 0,
+       navbar = $('nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+      currentScrollTop = a;
+     
+   let isMobile = window.matchMedia("only screen and (max-width: 990px)").matches;
+
+    if (!isMobile) {
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+      }
+      c = currentScrollTop;
+    }
+   });
+});
+
+  // Find the latest version by visiting https://cdn.skypack.dev/three.
+
+  import * as THREE from 'https://cdn.skypack.dev/three@0.136.0'
+  import * as SCROLL from 'https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js'
+
+  var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 2200
+});
+
+//Loader
+const textureLoader = new THREE.TextureLoader()
+const normalTexture = textureLoader.load('https://i.ibb.co/RNbQ2ZG/Normal-Map.png')
+
+// Debug
+//const gui = new dat.GUI()
+
+// Canvas
+const canvas = document.querySelector('canvas.webgl')
+
+// Scene
+const scene = new THREE.Scene()
+
+// Objects
+const geometry = new THREE.SphereBufferGeometry( .58, 64, 64 );
+
+// Materials
+
+const material = new THREE.MeshStandardMaterial()
+material.metalness = 0.7
+material.roughness = 0.2
+material.normalMap = normalTexture
+material.color = new THREE.Color(0x292929)
+
+// Mesh
+const sphere = new THREE.Mesh(geometry,material)
+scene.add(sphere)
+
+// Lights
+
+const pointLight = new THREE.PointLight(0xffffff, 0.1)
+pointLight.position.x = 2
+pointLight.position.y = 3
+pointLight.position.z = 4
+scene.add(pointLight)
+
+const pointLight2 = new THREE.PointLight(0xff0000, 2)
+pointLight2.position.set(-1.49,1.13,0.53)
+pointLight2.intensity = 1.48
+
+scene.add(pointLight2)
+
+const pointLight3 = new THREE.PointLight(0xe1ff, 2)
+pointLight3.position.set(2.13,-3,-1.98)
+pointLight3.intensity = 6.8
+
+scene.add(pointLight3)
+  
+const sizes = {
+  width: window.innerWidth,
+  height: window.innerHeight
+}
+
+window.addEventListener('resize', () =>
+{
+  // Update sizes
+  sizes.width = window.innerWidth
+  sizes.height = window.innerHeight
+
+  // Update camera
+  camera.aspect = sizes.width / sizes.height
+  camera.updateProjectionMatrix()
+
+  // Update renderer
+  renderer.setSize(sizes.width, sizes.height)
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+})
+
+/**
+* Camera
+*/
+// Base camera
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+camera.position.x = 0
+camera.position.y = 0
+camera.position.z = 2
+scene.add(camera)
+
+/**
+* Renderer
+*/
+const renderer = new THREE.WebGLRenderer({
+  canvas: canvas,
+  alpha: true
+})
+renderer.setSize(sizes.width, sizes.height)
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+/**
+* Animate
+*/
+
+document.addEventListener('mousemove', onDocumentMouseMove)
+
+let mouseX = 0
+let mouseY = 0
+
+let targetX = 0
+let targetY = 0
+
+const windowHalfX = window.innerWidth / 2
+const windowHalfY = window.innerHeight / 2 
+
+function onDocumentMouseMove(event) {
+
+    mouseX = (event.clientX - windowHalfX)
+    mouseY = (event.clientY - windowHalfY)
+}
+
+const updateSphere = (event) => {
+  sphere.position.y = window.scrollY * .001
+}
+
+let isMobile = window.matchMedia("only screen and (max-width: 990px)").matches;
+
+    
+window.addEventListener('scroll', updateSphere)
+
+const clock = new THREE.Clock()
+
+const tick = () =>
+{
+
+  targetX = mouseX * .001
+  targetY = mouseY * .001
+
+  const elapsedTime = clock.getElapsedTime()
+
+  // Update objects
+  sphere.rotation.y = .5 * elapsedTime
+
+  sphere.rotation.y += .5 * (targetX - sphere.rotation.y)
+  sphere.rotation.x += .05 * (targetY - sphere.rotation.x)
+  sphere.position.z += .05 * (targetY - sphere.rotation.x)
+
+  // Update Orbital Controls
+  // controls.update()
+
+  // Render
+  renderer.render(scene, camera)
+
+  // Call tick again on the next frame
+  window.requestAnimationFrame(tick)
+}
+
+tick()
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9IH_Npdzy8KmIP1T5j7aIZLNSd5KR5h0"></script>
+
+<script src="{{ get_asset_url('/duality/map/google-map.js') }}"></script>
+<script src="{{ get_asset_url('/duality/map/jquery.min.js') }}"></script>
+<script src="{{ get_asset_url('/duality/map/jquery.validate.min.js') }}"></script>
+<script src="{{ get_asset_url('/duality/map/main.js') }}"></script>
+<script src="{{ get_asset_url('/duality/map/popper.js') }}"></script>
+
+{% end_require_js %}
+
+{% require_css %}
+<link rel="stylesheet" type="text/css" href="{{ get_asset_url('/duality/css/contact-app.css') }}" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+{% end_require_css %}
+
+{% block body %}
+{% dnd_area "boxes", class="" %}
+<div id="gradient">
+  {% dnd_section %}   
+    {% dnd_module path='@hubspot/rich_text', offset=0, width=12 %}
+      {% module_attribute "html"%} 
+        <div class = "container">
+          <canvas class="webgl"></canvas>
+            <div class = "hero"><strong>Built for More</strong>
+            </div>
+            <a class="down-arrow" data-scroll href="#slide-header">
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </div>
+      {% end_module_attribute %}
+    {% end_dnd_module %}
+  {% end_dnd_section %}
+  <section id="pages">
+  {% dnd_section %} 
+    {% dnd_module path='@hubspot/rich_text', offset=0, width=12 %}
+      {% module_attribute "html"%} 
+        <div class="container3">
+          <div class="at-section">
+            <div id="slide-header" class="sub-hero">Landing pages</div>
+          </div>
+          <section  class="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2" checked>
+            <input type="radio" name="slider" id="s3">
+            <label for="s1" id="slide1"><img class="label-image" src="{{ get_asset_url('/duality/images/Page-One.png') }}"><a class="slide-link" href="{{ get_asset_url('/duality/templates/Landing-Page-1.html') }}">View Page</a></label>
+            <label for="s2" id="slide2"><img class="label-image" src="{{ get_asset_url('/duality/images/Page-Two.png') }}"><a class="slide-link" href="{{ get_asset_url('/duality/templates/Landing-Page-2.html') }}">View Page</a></label>
+            <label for="s3" id="slide3"><img class="label-image" src="{{ get_asset_url('/duality/images/Page-Three.png') }}"><a class="slide-link" href="{{ get_asset_url('/duality/templates/Landing-Page-3.html') }}">View Page</a></label>
+          </section> 
+          <div class="at-grid" data-column="3"> 
+            <div class="at-column">
+              <div class="at-user">
+                <div class="at-user__title"><a href="{{ get_asset_url('/duality/templates/Landing-Page-1.html') }}"><img class="label-image" src="{{ get_asset_url('/duality/images/Page-One.png') }}"></a></div>
+              </div>
+            </div>
+            <div class="at-column">
+              <div class="at-user">
+                <div class="at-user__title"><a href="{{ get_asset_url('/duality/templates/Landing-Page-2.html') }}"><img class="label-image" src="{{ get_asset_url('/duality/images/Page-Two.png') }}"></a></div>
+              </div>
+            </div>
+            <div class="at-column">
+              <div class="at-user">
+                 <div class="at-user__title"><a href="{{ get_asset_url('/duality/templates/Landing-Page-3.html') }}"><img class="label-image" src="{{ get_asset_url('/duality/images/Page-Three.png') }}"></a></div>
+               </div> 
+             </div>
+           </div>
+         </div>
+       {% end_module_attribute %}
+     {% end_dnd_module %}
+   {% end_dnd_section %}
+  </section>
+  
+  <section class="ftco-section" id="contact-page">
+		<div class="container-contact">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters mb-5">
+							<div class="col-sm-7">
+                  {% dnd_section 
+                       margin={
+                       'top': '4em',
+                       'bottom': '2em',
+                       },
+                     padding={
+                        'left': '3.7%',
+                        'right': '3.7%'
+                      }
+                  %}  
+                     {% dnd_column, offset=0, width=12 %}
+                        {% dnd_row %}
+                          {% dnd_module path='@hubspot/rich_text', offset=0, width=6 %}
+                            {% module_attribute "html"%}  
+                              <div style="border-radius: 3%" id="contact-wrap" class="w-100 p-md-5 p-4">
+                                <h3 style="color: black">Contact Us</h3>
+                                <div id="form-message-warning" class="mb-4"></div> 
+                                <div id="form-message-success" class="mb-4">
+                                  Your message was sent, thank you!
+                                </div>
+                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                      <div class="form-group">
+                                        <label class="label" for="name">Full Name</label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12"> 
+                                      <div class="form-group">
+                                        <label class="label" for="email">Email Address</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label class="label" for="subject">Subject</label>
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label class="label" for="#">Message</label>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <div class="contact">
+                                          <a href="">Send</a>
+                                        </div>
+                                        <div class="submitting"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                           {% end_module_attribute %}
+                        {% end_dnd_module %}
+                     </div>
+                     <div class="col-sm-5 d-flex align-items-stretch">                 
+                          {% dnd_module path='@hubspot/rich_text' offset=6, width=6 %}
+                            {% module_attribute "html"%}  
+                              <div id="map" >
+                              </div>
+                            {% end_module_attribute %}
+                          {% end_dnd_module %}
+                      </div>
+                   {% end_dnd_row %}
+                 {% end_dnd_column %}
+               {% end_dnd_section %}
+						<div class="row">
+             	<div class="row">
+              {% dnd_section 
+                  margin={
+               'top': '5em',
+               'bottom': '3em',
+               },
+               padding={
+                'left': '10%',
+                'right': '10%'
+              }
+              %}  
+                {% dnd_column, offset=0, width=12 %}
+                  {% dnd_row %}
+                      <div class="col-md-3">
+                        {% dnd_module path='@hubspot/rich_text', offset=0, width=3 %}
+                           {% module_attribute "html"%} 
+                              <div class="dbox w-100 text-center">
+                                <a href="http://maps.google.com/?q=25 First Street, Cambridge, massachusetts, 02141" target="_blank">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                  <span class="fa fa-map-marker-alt" aria-hidden="true"></span>
+                                  </div></a>
+                                <div class="text">
+                                  <p><a href="http://maps.google.com/?q=25 First Street, Cambridge, massachusetts, 02141" target="_blank">25 First Street, 2nd Floor</a><br/>
+                                    Cambridge, MA 02141</p>
+                                </div>
+                              </div>
+                            {% end_module_attribute %}
+                          {% end_dnd_module %}
+                      </div>
+                      <div class="col-md-3">
+                        {% dnd_module path='@hubspot/rich_text', offset=3, width=3 %}
+                           {% module_attribute "html"%} 
+                              <div class="dbox w-100 text-center">
+                                <a href="tel://18884827768" target="_blank">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                  <span class="fa fa-phone"></span>
+                                  </div></a>
+                                <div class="text">
+                                  <p><a href="tel://18884827768" target="_blank">+1 (888) 482-7768</a></p>
+                                </div>
+                              </div>
+                          {% end_module_attribute %}
+                        {% end_dnd_module %}
+                      </div>
+                      <div class="col-md-3">
+                        {% dnd_module path='@hubspot/rich_text', offset=6, width=3 %}
+                           {% module_attribute "html"%} 
+                              <div class="dbox w-100 text-center">
+                                <a href="mailto:info@yoursite.com" target="_blank">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                  <span class="fa fa-paper-plane"></span>
+                                  </div></a>
+                                <div class="text">
+                                  <p><a href="mailto:info@yoursite.com" target="_blank">support@hubspot.com</a></p>
+                                </div>
+                              </div>
+                          {% end_module_attribute %}
+                        {% end_dnd_module %}
+                      </div>
+                      <div class="col-md-3">
+                        {% dnd_module path='@hubspot/rich_text', offset=9, width=3 %}
+                           {% module_attribute "html"%} 
+                              <div class="dbox w-100 text-center">
+                                <a href="http://hubspot.com" target="_blank">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                  <span class="fa fa-globe"></span>
+                                  </div></a>
+                                <div class="text">
+                                  <p><a href="http://hubspot.com" target="_blank">hubspot.com</a></p>
+                                </div>
+                              </div>
+                            {% end_module_attribute %}
+                          {% end_dnd_module %}
+                       </div>
+                     {% end_dnd_row %}
+                   {% end_dnd_column %}
+                 {% end_dnd_section %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% end_dnd_area %}
+</div>
+   
+{% endblock body %}
+{% block footer %}
+{% global_partial path='./partials/footer.html' %}
+{% endblock footer %}

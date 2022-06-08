@@ -1,0 +1,230 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing page
+  screenshotPath: ../images/template-previews/landing-page.png
+-->
+{% extends './layouts/base.html' %}
+{% block header %}
+{% global_partial path='./partials/header-duality-limited.html' %}
+{% endblock header %}
+
+{% require_js %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="module">
+  
+  $(document).ready(function () {
+  'use strict';
+   var c, currentScrollTop = 0,
+       navbar = $('nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+      currentScrollTop = a;
+     
+   let isMobile = window.matchMedia("only screen and (max-width: 990px)").matches;
+
+    if (!isMobile) {
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+      }
+      c = currentScrollTop;
+    }
+   });
+});
+</script>
+{% end_require_js %}
+{% require_css %}
+<link rel="stylesheet" type="text/css" href="{{ get_asset_url('/three-js/css/contact-app.css') }}" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+{% end_require_css %}
+
+{% block body %}
+{% dnd_area "boxes", class="" %}
+
+<div id="gradient">
+  <div id="please" class = "get-in-touch">
+    <div style = "height: 10vh; width:10vw">
+      <canvas style = "height: 100px" class="orb"></canvas>
+    </div>
+      <section class="ftco-section" id="contact-page">
+        <div class="container-contact">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div id="work" class="wrapper">
+                <div  class="row no-gutters mb-5">
+                  {% dnd_section 
+                  display=flex,
+                  flex_direction=column_reverse,
+                  margin={
+                   'top': '5em',
+                   'bottom': '3em'
+                   },
+                   padding={
+                    'left': '10%',
+                    'right': '10%'
+                  }
+                  %} 
+                  <div class="col-md-7">
+                    {% dnd_module path='@hubspot/rich_text', offset=5, width=7 %}
+                      {% module_attribute "html"%} 
+                       <div id="contact-wrap" class="w-100 p-md-5 p-4" style="border-radius: 3%">
+                        <h3 style="color: black">Contact Us</h3>
+                        <div id="form-message-warning" class="mb-4"></div> 
+                        <div id="form-message-success" class="mb-4">
+                          Your message was sent, thank you!
+                        </div>
+                          <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="form-group">
+                                  <label class="label" for="name">Full Name</label>
+                                  <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                </div>
+                              </div>
+                              <div class="col-lg-6"> 
+                                <div class="form-group">
+                                  <label class="label" for="email">Email Address</label>
+                                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label class="label" for="subject">Subject</label>
+                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label class="label" for="#">Message</label>
+                                  <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <div class="contact">
+                                    <a href="">Send</a>
+                                  </div>
+                                  <div class="submitting"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                     {% end_module_attribute %}
+                  {% end_dnd_module %}
+                </div>
+                <div id="page-one-text" class="col-md-5 d-flex align-items-stretch class justify-content-center">
+                  {% dnd_module path='@hubspot/rich_text', offset=0, width=5 %}
+                    {% module_attribute "html"  %}  
+                    <h1 style="text-align: center">Lorem ipsum dolor</h1>
+                      <h3 style="text-align: center">Consectetur adipiscing elit</h3>
+                        <p style="text-align: center; margin-bottom: 60px">Ut enim ad minim veniam, quis nostrud exercitation ullamco. Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla. Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+                     {% end_module_attribute %}
+                   {% end_dnd_module %}
+                </div>
+              {% end_dnd_section %}
+					  </div>
+						<div class="row">
+              {% dnd_section 
+                  margin={
+               'top': '5em',
+               'bottom': '5em'
+               },
+               padding={
+                'left': '3%',
+                'right': '3%'
+              }
+              %}  
+             {% dnd_column, offset=0, width=12 %}
+             {% dnd_row %}
+							<div class="col-md-3">
+                {% dnd_module path='@hubspot/rich_text', offset=0, width=3 %}
+                   {% module_attribute "html"%} 
+                      <div class="dbox w-100 text-center">
+                        <a href="http://maps.google.com/?q=25 First Street, Cambridge, massachusetts, 02141" target="_blank">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-map-marker-alt" aria-hidden="true"></span>
+                          </div></a>
+                        <div class="text">
+                          <p><a href="http://maps.google.com/?q=25 First Street, Cambridge, massachusetts, 02141" target="_blank">25 First Street, 2nd Floor</a><br/>
+                            Cambridge, MA 02141</p>
+                        </div>
+                      </div>
+                   {% end_module_attribute %}
+                {% end_dnd_module %}
+							</div>
+							<div class="col-md-3">
+                {% dnd_module path='@hubspot/rich_text', offset=3, width=3 %}
+                   {% module_attribute "html"%} 
+                      <div class="dbox w-100 text-center">
+                        <a href="tel://18884827768" target="_blank">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-phone"></span>
+                          </div></a>
+                        <div class="text">
+                          <p><a href="tel://18884827768" target="_blank">+1 (888) 482-7768</a></p>
+                        </div>
+                      </div>
+                    {% end_module_attribute %}
+                 {% end_dnd_module %}
+							</div>
+                <div class="col-md-3">
+                  {% dnd_module path='@hubspot/rich_text', offset=6, width=3 %}
+                      {% module_attribute "html"%} 
+                        <div class="dbox w-100 text-center">
+                          <a href="mailto:info@yoursite.com" target="_blank">
+                          <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-paper-plane"></span>
+                            </div></a>
+                          <div class="text">
+                            <p><a href="mailto:info@yoursite.com" target="_blank">support@hubspot.com</a></p>
+                          </div>
+                        </div>
+                    {% end_module_attribute %}
+                  {% end_dnd_module %}
+                </div>
+                  <div class="col-md-3">
+                    {% dnd_module path='@hubspot/rich_text', offset=9, width=3 %}
+                      {% module_attribute "html"%} 
+                        <div class="dbox w-100 text-center">
+                          <a href="http://hubspot.com" target="_blank">
+                          <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-globe"></span>
+                            </div></a>
+                          <div class="text">
+                            <p><a href="http://hubspot.com" target="_blank">hubspot.com</a></p>
+                          </div>
+                        </div>
+                      {% end_module_attribute %}
+                     {% end_dnd_module %}
+                   </div>
+                 {% end_dnd_row %}
+               {% end_dnd_column %}
+             {% end_dnd_section %}  
+            </div>
+           {% end_dnd_area %}
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+</div>
+</div>
+
+
+{% endblock body %}
+{% block footer %} 
+{% global_partial path='./partials/footer.html' %}
+{% endblock footer %}
+
+
+
+
+

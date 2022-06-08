@@ -1,0 +1,357 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing page
+  screenshotPath: ../images/template-previews/landing-page.png
+-->
+{% extends './layouts/base.html' %}
+{% block header %}
+<div id="#top"></div>
+{% global_partial path='./partials/header-duality-limited.html', height="100px" %}
+{% endblock header %}
+
+{% require_js %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="module">
+  
+  $(document).ready(function () {
+  'use strict';
+   var c, currentScrollTop = 0,
+       navbar = $('nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+      currentScrollTop = a;
+     
+   let isMobile = window.matchMedia("only screen and (max-width: 990px)").matches;
+
+    if (!isMobile) {
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+      }
+      c = currentScrollTop;
+    }
+   });
+});
+</script>
+{% end_require_js %}
+
+{% require_css %}
+<link rel="stylesheet" type="text/css" href="{{ get_asset_url('/three-js/css/contact-app.css') }}" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+{% end_require_css %}
+
+{% block body %}
+{% dnd_area "boxes", class="" %}
+<div id="gradient">
+    <div class = "get-in-touch">
+      <div style = "height: 10vh; width:10vw">
+        <canvas style = "height: 100px" class="orb"></canvas>
+      </div>
+      <section class="ftco-section" id="contact-page">
+          <div id="page-one-header" class="row">
+            {% dnd_section 
+                  margin={
+               'top': '7em',
+               'bottom': '2em',
+               },
+               padding={
+                'left': '10%',
+                'right': '10%'
+              }
+           %}  
+            <div class="col-md-12 text-align-center color-white">
+               {% dnd_column, offset=0, width=12 %}
+                {% dnd_row %}
+                  {% dnd_module path='@hubspot/rich_text', offset=0, width=12 %}
+                    {% module_attribute "html"%}  
+                <h1 style="text-align: center">
+                  Lorem Ipsum Baby
+                </h1>
+                 {% end_module_attribute %}
+                  {% end_dnd_module %}
+                     {% end_dnd_row %}
+
+               {% dnd_row %}
+              {% dnd_module path='@hubspot/rich_text', offset=0, width=12 %}
+                    {% module_attribute "html"%}  
+                <h3 style="text-align: center">
+                  Dolor amet.
+                </h3>
+                 {% end_module_attribute %}
+                  {% end_dnd_module %}
+              {% end_dnd_row %}
+                {% end_dnd_column %}
+              </div>
+            {% end_dnd_section %}
+                  </div>
+                <div id="page-one-paragraphs" class="row">
+                    {% dnd_section 
+                           margin={
+                             'top': '2em',
+                             'bottom': '2em',
+                             },
+                             padding={
+                              'left': '19.5%',
+                              'right': '19.5%'
+                            }    
+                         %}  
+                      {% dnd_column, offset=0, width=12 %}
+                        {% dnd_row %}
+                          {% dnd_module path='@hubspot/rich_text', offset=0, width=6 %}
+                            {% module_attribute "html"%}  
+                              <p style="text-align: center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi odit aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                        
+                              </p>
+                            {% end_module_attribute %}
+                          {% end_dnd_module %}
+                          {% dnd_module path='@hubspot/rich_text', offset=6, width=6 %}
+                            {% module_attribute "html"%}  
+                              <p style="text-align: center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi odit aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                        
+                              </p>
+                            {% end_module_attribute %}
+                          {% end_dnd_module %}
+                        {% end_dnd_row %}
+                      {% end_dnd_column %}
+                    {% end_dnd_section %}
+                </div>
+            {% dnd_section %}   
+         {% dnd_module path='@hubspot/rich_text', offset=0, width=12 %}
+       {% module_attribute "html"%}  
+		<div class="container-contact">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters mb-5">
+							<div class="col-md-12">
+								<div id="contact-wrap" class="w-100 p-md-5 p-4" style="border-radius: 3%">
+									<h3 style="color: black">Contact Us</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name" required>First Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+                        	<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="last-name" required>Last Name</label>
+													<input type="text" class="form-control" name="last-name" id="last-name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email" required>Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+                      	<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="phone-number" required>Phone Number</label>
+													<input type="text" class="form-control" name="phone-number" id="phone-number" placeholder="(888)-888-8888">
+												</div>
+											</div>
+                      	<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="company-name" required>Company Name</label>
+													<input type="text" class="form-control" name="company-name" id="company-name" placeholder="Name">
+												</div>
+											</div>
+                      	<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="job-title" required>Job Title</label>
+													<input type="text" class="form-control" name="job-title" id="job-title" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject" required>Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#" required>Message</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+                        <div class="form-group">
+                          <div class="contact">
+                            <a href="">Submit</a>
+                          </div>
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div> 
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section
+             margin={
+               'top': '5em',
+               'bottom': '3em',
+               },
+               padding={
+                'left': '10%',
+                'right': '10%'
+              }
+        %}  
+          {% dnd_column, offset=0, width=12 %}
+             {% dnd_row %}
+                <div id="page-cards" class="row">
+                    <div class="card-area col-lg-4 justify-content-center">
+                       {% dnd_module path='@hubspot/rich_text', offset=0, width=4 %}
+                           {% module_attribute "html"%} 
+                               <section class="card">
+                                  <div class="card__body">
+                                    <h1>Lorem Ipsum</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div> 
+                                </section>
+                          {% end_module_attribute %}
+                        {% end_dnd_module %}
+                       </div>
+                       <div class="card-area col-lg-4 justify-content-center">
+                         {% dnd_module path='@hubspot/rich_text', offset=4, width=4 %}
+                            {% module_attribute "html"%} 
+                              <section class="card">
+                                 <div class="card__body">
+                                   <h1>Lorem Ipsum</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                 </div> 
+                              </section> 
+                            {% end_module_attribute %}
+                          {% end_dnd_module %}
+                        </div>
+              <div class="card-area col-lg-4 justify-content-center">
+                {% dnd_module path='@hubspot/rich_text', offset=8, width=4 %}
+                   {% module_attribute "html"%} 
+                <section class="card">
+                  <div class="card__body">
+                    <h1>Lorem Ipsum</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div> 
+                </section>
+            
+                   {% end_module_attribute %}
+                {% end_dnd_module %}
+                 </div>
+              {% end_dnd_row %}
+           {% end_dnd_column %}
+        {% end_dnd_section %}
+        </div> 
+						<div class="row">
+              {% dnd_section 
+                  margin={
+               'top': '5em',
+               'bottom': '3em',
+               },
+               padding={
+                'left': '10%',
+                'right': '10%'
+              }
+          %}  
+        {% dnd_column, offset=0, width=12 %}
+          {% dnd_row %}
+						<div class="col-md-3">
+                {% dnd_module path='@hubspot/rich_text', offset=0, width=3 %}
+                  {% module_attribute "html"%} 
+                    <div class="dbox w-100 text-center">
+                      <a href="http://maps.google.com/?q=25 First Street, Cambridge, massachusetts, 02141" target="_blank">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-map-marker-alt" aria-hidden="true"></span>
+                        </div></a>
+                      <div class="text">
+                        <p><a href="http://maps.google.com/?q=25 First Street, Cambridge, massachusetts, 02141" target="_blank">25 First Street, 2nd Floor</a><br/>
+                          Cambridge, MA 02141</p>
+                      </div>
+                    </div>
+                 {% end_module_attribute %}
+              {% end_dnd_module %}
+					  </div>
+							<div class="col-md-3">
+                {% dnd_module path='@hubspot/rich_text', offset=3, width=3 %}
+                  {% module_attribute "html"%} 
+					          <div class="dbox w-100 text-center">
+                      <a href="tel://18884827768" target="_blank">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-phone"></span>
+                        </div></a>
+                      <div class="text">
+                        <p><a href="tel://18884827768" target="_blank">+1 (888) 482-7768</a></p>
+                      </div>
+                    </div>
+                  {% end_module_attribute %}
+                {% end_dnd_module %}
+							</div>
+							<div class="col-md-3">
+                {% dnd_module path='@hubspot/rich_text', offset=6, width=3 %}
+                  {% module_attribute "html"%} 
+                    <div class="dbox w-100 text-center">
+                      <a href="mailto:info@yoursite.com" target="_blank">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-paper-plane"></span>
+                    </div></a>
+                    <div class="text">
+                        <p><a href="mailto:info@yoursite.com" target="_blank">support@hubspot.com</a></p>
+                    </div>
+                    </div>
+                  {% end_module_attribute %}
+               {% end_dnd_module %}
+							</div>
+							<div class="col-md-3">
+                {% dnd_module path='@hubspot/rich_text', offset=9, width=3 %}
+                   {% module_attribute "html"%} 
+                      <div class="dbox w-100 text-center">
+                        <a href="http://hubspot.com" target="_blank">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-globe"></span>
+                          </div></a>
+                        <div class="text">
+                          <p><a href="http://hubspot.com" target="_blank">hubspot.com</a></p>
+                        </div>
+                      </div>
+                    {% end_module_attribute %}
+                            {% end_dnd_module %}
+                         </div>
+                       {% end_dnd_row %}
+                     {% end_dnd_column %}
+                   {% end_dnd_section %}
+                {% end_dnd_area %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{% endblock body %}
+{% block footer %}
+{% global_partial path='./partials/footer.html' %}
+{% endblock footer %}
+
+
+
+

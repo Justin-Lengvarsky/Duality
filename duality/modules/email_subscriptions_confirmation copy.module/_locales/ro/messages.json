@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Antet",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Text antet",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Dacă aceasta nu este adresa dvs. de e-mail, ignorați această pagină, deoarece este probabil ca e-mailul asociat cu această pagină să fi fost direcționat către dvs.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Subtitlu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "V-ați actualizat cu succes preferințele legate de e-mail.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Mesaj legat de actualizarea abonării",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "V-ați dezabonat cu succes de la toate comunicările prin e-mail.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Mesaj legat de dezabonare",
+    "description" : "",
+    "placeholders" : null
+  }
+}

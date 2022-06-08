@@ -1,0 +1,33 @@
+<!--
+  templateType: email_backup_unsubscribe_page
+  isAvailableForNewContent: true
+  label: Boilerplate - email backup unsubscribe
+  screenshotPath: ../../images/template-previews/backup-unsubscribe.png
+-->
+{% set template_css = '../../css/templates/system.css' %}
+{% extends '../layouts/base.html' %}
+
+{% block header %}
+{% global_partial path='../partials/header-duality-limited.html' %}
+{% endblock header %}
+
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Unsubscribe" %}
+
+{% require_css %}
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+<link rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="{{ get_asset_url('/three-js/css/contact-app.css') }}" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+{% end_require_css %}
+
+{% block body %}
+<section class="content-wrapper">
+  <div class="systems-page">
+    {% module "module_16418776116398" path='/duality/modules/email_simple_subscription_clone', label="email_simple_subscription_clone" %}
+  </div>
+</section>
+{% endblock body %}

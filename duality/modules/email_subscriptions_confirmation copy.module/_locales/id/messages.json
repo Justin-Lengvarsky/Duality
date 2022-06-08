@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Judul",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Teks Judul",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Jika ini bukan alamat email Anda, abaikan halaman ini karena email yang terhubung ke halaman ini kemungkinan besar diteruskan kepada Anda.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Subjudul",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "Anda berhasil memperbarui preferensi email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Pesan pada pembaruan langganan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "Anda berhasil batal berlangganan dari semua komunikasi email.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Pesan pada pembatalan langganan",
+    "description" : "",
+    "placeholders" : null
+  }
+}

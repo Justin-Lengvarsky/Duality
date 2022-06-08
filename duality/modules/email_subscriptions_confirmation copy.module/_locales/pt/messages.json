@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Cabeçalho",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Texto do cabeçalho",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Se este não é o seu endereço de e-mail ignore esta página, uma vez que, muito provavelmente, o e-mail associado a esta página foi reencaminhado para si.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Subcabeçalho",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "Atualizou as suas preferências de e-mail com êxito.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Mensagem sobre a atualização da subscrição",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "Anulou a sua subscrição de todas as comunicações de e-mail com êxito.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Mensagem sobre a anulação da subscrição",
+    "description" : null,
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Заголовок",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Текст заголовка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Если это не ваш адрес электронной почты, проигнорируйте эту страницу, так как связанное с ней электронное письмо, вероятнее всего, было переслано вам.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Подзаголовок",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "Ваши настройки электронной почты обновлены.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Сообщение после обновления подписки",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "Подписка на все коммуникации по электронной почте отменена.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Сообщение после отмены подписки",
+    "description" : "",
+    "placeholders" : null
+  }
+}

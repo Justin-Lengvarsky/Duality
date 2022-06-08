@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "제목",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "제목 텍스트",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "귀하의 이메일 주소가 아닌 경우에는 이 페이지를 무시하십시오. 이 페이지와 연결된 이메일이 귀하에게 전달되었을 가능성이 큽니다.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "부제목",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "이메일 기본 설정을 업데이트했습니다.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "구독 업데이트 메시지",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "모든 이메일 구독을 취소했습니다.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "구독 취소 메시지",
+    "description" : null,
+    "placeholders" : null
+  }
+}

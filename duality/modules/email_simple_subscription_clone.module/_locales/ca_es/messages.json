@@ -1,0 +1,67 @@
+{
+  "button_text.default" : {
+    "message" : "Cancel·la la subscripció",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Text del botó",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "Cancel·lació de la subscripció al correu electrònic",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Capçalera",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.default" : {
+    "message" : "La teva adreça electrònica:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.label" : {
+    "message" : "Text d'ajuda d'entrada de correu electrònic",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.default" : {
+    "message" : "correu@example.com",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.label" : {
+    "message" : "Text del contenidor d'entrada de correu electrònic",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_simple_subscription_clone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

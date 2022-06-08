@@ -1,0 +1,61 @@
+[ {
+  "id" : "55f058f2-ee78-2624-cd8b-562e2aa392ba",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Email Unsubscribe"
+}, {
+  "id" : "33717e20-8dfa-1c1b-3a99-b97cc6490237",
+  "name" : "input_help_text",
+  "display_width" : null,
+  "label" : "Email input help text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your email address:"
+}, {
+  "id" : "b0b9fefc-8a0f-5bfb-b39c-355b31e0d99f",
+  "name" : "input_placeholder",
+  "display_width" : null,
+  "label" : "Email input placeholder text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "email@example.com"
+}, {
+  "id" : "c00b07f5-1d82-f248-a5c3-a2ad92496caa",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "000eda6e-1e7f-c072-e329-8028e4c9c23a",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Unsubscribe"
+} ]

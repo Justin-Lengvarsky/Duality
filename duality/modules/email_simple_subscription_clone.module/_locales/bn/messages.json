@@ -1,0 +1,67 @@
+{
+  "button_text.default" : {
+    "message" : "আনসাবস্ক্রাইব করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "বাটন টেক্সট",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "ইমেল আনসাবস্ক্রাইব করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "হেডার",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.default" : {
+    "message" : "আপনার ইমেল ঠিকানা:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.label" : {
+    "message" : "ইমেল ইনপুট সহায়তা টেক্সট",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.default" : {
+    "message" : "email@example.com",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.label" : {
+    "message" : "ইমেল ইনপুট প্লেসহোল্ডার টেক্সট",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_simple_subscription_clone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

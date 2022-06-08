@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Antraštė",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Antraštės tekstas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Jei šis el. pašto adresas priklauso ne jums, nekreipkite į šį puslapį dėmesio, nes su šiuo el. pašto adresu susietas puslapis greičiausiai jums buvo peradresuotas.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Paantraštė",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "Sėkmingai atnaujinote savo el. laiškų nuostatas.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Pranešimas dėl prenumeratos atnaujinimo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "Sėkmingai atšaukėte visų el. laiškų pranešimų prenumeratas.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Pranešimas atšaukus prenumeratą",
+    "description" : "",
+    "placeholders" : null
+  }
+}

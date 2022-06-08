@@ -1,0 +1,127 @@
+{
+  "button_text.default" : {
+    "message" : "Unsubscribe",
+    "description" : "Text displayed in the button.",
+    "placeholders" : null
+  },
+  "button_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Button text",
+    "description" : "Field for entering text displayed in the button.",
+    "placeholders" : null
+  },
+  "button_text.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.validation_regex" : {
+    "message" : "",
+    "description" : "Regex is a regular expression.",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "Email Unsubscribe",
+    "description" : "Text displayed in the module title",
+    "placeholders" : null
+  },
+  "header.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Header",
+    "description" : "Field for entering a label",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.validation_regex" : {
+    "message" : "",
+    "description" : "Regex is a regular expression.",
+    "placeholders" : null
+  },
+  "input_help_text.default" : {
+    "message" : "Your email address:",
+    "description" : "Text displayed describing the email input",
+    "placeholders" : null
+  },
+  "input_help_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.label" : {
+    "message" : "Email input help text",
+    "description" : "Field for entering email input help text",
+    "placeholders" : null
+  },
+  "input_help_text.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_help_text.validation_regex" : {
+    "message" : "",
+    "description" : "Regex is a regular expression.",
+    "placeholders" : null
+  },
+  "input_placeholder.default" : {
+    "message" : "email@example.com",
+    "description" : "Placeholder email address shown by default",
+    "placeholders" : null
+  },
+  "input_placeholder.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.label" : {
+    "message" : "Email input placeholder text",
+    "description" : "Field for entering a placeholder email address",
+    "placeholders" : null
+  },
+  "input_placeholder.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "input_placeholder.validation_regex" : {
+    "message" : "",
+    "description" : "Regex is a regular expression.",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_simple_subscription_clone",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

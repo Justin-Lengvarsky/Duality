@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "رأس الصفحة",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "نص رأس الصفحة",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "إذا لم يكن هذا هو عنوان بريدك الإلكتروني، فالرجاء تجاهل هذه الصفحة لأن البريد الإلكتروني المرتبط بهذه الصفحة قد تمت إعادة توجيهه إليك على الأرجح.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "رأس الصفحة الفرعي",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "لقد قمت بتحديث تفضيلات البريد الإلكتروني الخاص بك بنجاح.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "رسالة بشأن تحديث الاشتراك",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "لقد قمت بإلغاء اشتراكك بنجاح من جميع اتصالات البريد الإلكتروني.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "رسالة بشأن إلغاء الاشتراك",
+    "description" : "",
+    "placeholders" : null
+  }
+}

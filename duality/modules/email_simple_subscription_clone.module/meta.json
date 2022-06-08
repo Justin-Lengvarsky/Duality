@@ -1,0 +1,17 @@
+{
+  "content_tags" : [ {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_EMAIL",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type-email_simple_subscription",
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "../../../mV0_hubspot/img/icon/high-forms-1.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 63565121965,
+  "label" : "email_simple_subscription_clone",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "../../../three-js/images/module-icons/info-circle-solid.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 62738654350,
+  "label" : "Card",
+  "is_available_for_new_content" : true
+}

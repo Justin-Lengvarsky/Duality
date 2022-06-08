@@ -1,0 +1,139 @@
+<!--
+  templateType: global_partial
+  label: Header no navigation
+-->
+
+<style>
+  header h2 {
+   color: #000; 
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(88, 162, 159);
+  font-size: 17px;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: justify;
+  width: 10em;
+}
+
+.dropdown-content a:hover {
+  background-image: linear-gradient(to left, rgb(235, 245, 248), rgb(88, 162, 159));
+  width: 100%;
+  color: white;
+  }
+.dropdown:hover .dropdown-content {
+  display: block;
+  }
+ @media (max-width: 690px) {
+     header {
+    margin-bottom: -20px;
+  }
+       .drop-menu {
+       position: absolute !important;
+       top: 10vh !important;
+       left: 0px !important;
+       right: 0px !important;
+     }
+     
+     .dropdown {
+       position: absolute !important;
+       top: 10vh !important;
+       left: 0px !important;
+       right: 0px !important;
+     }
+  }
+
+</style>
+<header class="header header--no-navigation">
+
+  <div class="nav-container">
+    <div class="title">
+      <a href="{{ get_asset_url('/duality/templates/Landing-Home-Page.html') }}"><h2>DUALITY</h2></a>
+    </div>
+      <ul>
+        
+                <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Pages <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+           <a href="{{ get_asset_url('/duality/templates/Landing-Page-1.html') }}">Landing Page 1</a>
+          <a href="{{ get_asset_url('/duality/templates/Landing-Page-2.html') }}">Landing Page 2 </a>
+          <a href="{{ get_asset_url('/duality/templates/Landing-Page-3.html') }}">Landing Page 3</a>
+            </div>
+          </li>
+  
+        <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Support <i class="fa-solid fa-caret-down"></i></a>
+    <div class="dropdown-content">
+   <a href="{{ get_asset_url('/duality/templates/system/password-prompt.html') }}">Password Prompt</a>
+  <a href="{{ get_asset_url('/duality/templates/system/search-results.html') }}">Search Results</a>
+  <a href="{{ get_asset_url('/duality/templates/system/subscription-preferences.html') }}">Subscription Preferences</a>
+  <a href="{{ get_asset_url('/duality/templates/system/subscriptions-confirmation.html') }}">Subscription Confirmation</a>
+  <a href="{{ get_asset_url('/duality/templates/system/backup-unsubscribe.html') }}">Backup Unsubscribe</a>
+  <a href="{{ get_asset_url('/duality/templates/system/404.html') }}">404 Error</a>
+  <a href="{{ get_asset_url('/duality/templates/system/500.html') }}">500 Error</a>
+    </div>
+  </li>
+        
+        <li><a href="http://www.hubspot.com" target="_blank">Buy Now</a></li>
+        
+      </ul>
+      <div class="ham-menu">
+          <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </div>
+
+</header>
+<div class="drop-menu">
+  
+  <div><a href="#slide-header">Pages</a></div>
+  <div><a href="http://www.hubspot.com" target="_blank">Buy Now</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/password-prompt.html') }}">Password Prompt</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/search-results.html') }}">Search Results</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/subscription-preferences.html') }}">Subscription Preferences</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/subscriptions-confirmation.html') }}">Subscription Confirmation</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/backup-unsubscribe.html') }}">Backup Unsubscribe</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/404.html') }}">404 Error</a></div>
+  <div><a href="{{ get_asset_url('/duality/templates/system/500.html') }}">500 Error</a></div>
+</div>
+
+<script>
+var hamMenu = document.querySelector('.ham-menu');
+var dropMenu = document.querySelector('.drop-menu');
+var dropMenuList = document.querySelectorAll('.drop-menu div');
+var dropMenuListText = document.querySelectorAll('.drop-menu div a');
+
+hamMenu.addEventListener('click',() => {
+  console.log('fsdgd');
+  dropMenu.classList.toggle('drop-down');
+  hamMenu.children[0].classList.toggle('top');
+  hamMenu.children[1].classList.toggle('mid');
+  hamMenu.children[2].classList.toggle('bottom');
+})
+
+dropMenuList.forEach(li => {
+  
+    li.addEventListener('mouseover', (e) => {
+    li.style.backgroundImage = "linear-gradient(to right,#EBF5F8,#58A29F)";
+    li.children[0].style.color = "white";
+  })
+
+    li.addEventListener('mouseleave', (e) => {
+    li.style.backgroundImage = "linear-gradient(to right,#EBF5F8,#EBF5F8)";
+    li.children[0].style.color = "#58A29F";
+  })
+  
+})
+
+</script>

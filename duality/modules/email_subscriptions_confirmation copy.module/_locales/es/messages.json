@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Encabezado",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Texto del encabezado",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Si esta no es tu dirección de correo electrónico, ignora esta página, ya que lo más probable es que te hayamos enviado el correo asociado a esta página.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Subencabezado",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "Actualizaste correctamente tus preferencias de correo electrónico.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Mensaje sobre actualización de suscripción",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "Cancelaste correctamente la suscripción a todas las comunicaciones por correo.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Mensaje sobre cancelación de suscripción",
+    "description" : null,
+    "placeholders" : null
+  }
+}

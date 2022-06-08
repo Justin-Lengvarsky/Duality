@@ -1,0 +1,67 @@
+{
+  "header.label" : {
+    "message" : "Nagłówek",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Tekst nagłówka",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "Jeśli to nie jest Twój adres e-mail, zignoruj tę stronę, gdyż powiązana z nią wiadomość najprawdopodobniej została do Ciebie przekazana.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Podtytuł",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "Twoje preferencje e-maili zostały zaktualizowane.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Wiadomość aktualizacji subskrypcji",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "Wszystkie subskrypcje e-maili zostały anulowane.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Wiadomość anulowania subskrypcji",
+    "description" : null,
+    "placeholders" : null
+  }
+}

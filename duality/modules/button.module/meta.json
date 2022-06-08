@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "../../../three-js/images/module-icons/cta.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 62738654344,
+  "label" : "Button",
+  "is_available_for_new_content" : true
+}

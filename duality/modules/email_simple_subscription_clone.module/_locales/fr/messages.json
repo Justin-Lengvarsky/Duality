@@ -1,0 +1,67 @@
+{
+  "button_text.default" : {
+    "message" : "Se désabonner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Texte du bouton",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "Désabonnement aux e-mails",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "En-tête",
+    "description" : null,
+    "placeholders" : null
+  },
+  "input_help_text.default" : {
+    "message" : "Votre adresse e-mail :",
+    "description" : null,
+    "placeholders" : null
+  },
+  "input_help_text.label" : {
+    "message" : "Texte d'aide de la saisie d'e-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "input_placeholder.default" : {
+    "message" : "email@example.com",
+    "description" : null,
+    "placeholders" : null
+  },
+  "input_placeholder.label" : {
+    "message" : "Texte de l'espace réservé de la saisie d'e-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_simple_subscription_clone",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

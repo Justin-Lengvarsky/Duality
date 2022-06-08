@@ -1,0 +1,117 @@
+{
+  "header.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Header",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.placeholder" : {
+    "message" : "Header Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "email_subscriptions_confirmation copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "subheader_text.default" : {
+    "message" : "If this is not your email address, please ignore this page since the email associated with this page was most likely forwarded to you.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subheader_text.label" : {
+    "message" : "Subheader",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.default" : {
+    "message" : "You have successfully updated your email preferences.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.label" : {
+    "message" : "Message on subscription update",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subscription_update_success.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.default" : {
+    "message" : "You have successfully unsubscribed from all email communications.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.label" : {
+    "message" : "Message on unsubscribe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "unsubscribe_all_success.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}
