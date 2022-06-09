@@ -14,9 +14,9 @@ See CMS functionality: Video Coming Soon
 
 ## How It's Made:
 
-**Tech used:** Hubl (HubSpots templating language), HTML, CSS, JavaScript, Three.js
+**Tech used:** Hubl (HubSpots templating language), HTML, CSS, JavaScript, jQuery, and Three.js
 
-Duality's drag and drop/customization functionality comes from Hubl, which also controls the spacing and layout of each page. The 3D orb on the fron page was created with Three.js, and any functionality (the mobile navigation bar and the map) were created using Vanilla JavaScript. 
+Duality's drag and drop/customization functionality comes from Hubl, which also controls the spacing and layout of each page. The 3D orb on the fron page was created with Three.js, and any functionality (the mobile navigation bar and the map) were created using jQuery and JavaScript. 
 
 ## Lessons Learned:
 
