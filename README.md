@@ -12,6 +12,21 @@ See CMS functionality: Video Coming Soon
 
 ![Duality home page](https://res.cloudinary.com/duf8g2rbv/image/upload/v1644717586/Screen_Shot_2022-02-12_at_7.57.04_PM_lacofr.png)
 
+
+## How to Launch
+
+### To download Duality using the HubSpot CMS CLI:
+
+Before getting started, you will need to have [Node.js](https://nodejs.org) installed, the [HubSpot CMS CLI](https://developers.hubspot.com/docs/cms/guides/getting-started-with-local-development#install-dependencies) installed.
+
+1. Navigate to the directory that you want to use for your project
+2. Run `hs create website-theme <directory>` to create the project
+3. [Configure](https://developers.hubspot.com/docs/cms/guides/getting-started-with-local-development#configure-the-local-development-tools) the local development tools for the portal(s) you'd like to use for your project.
+4. Run `hs watch --portal=<portal> src <directory> --initial-upload` to upload all the files in the project and [watch for changes](https://developers.hubspot.com/docs/cms/developer-reference/local-development-cms-cli#watch) to files in the `src` directory
+
+Please reference the _[Quick start guide to developing on the HubSpot CMS](https://developers.hubspot.com/docs/cms/guides/getting-started)_ and _[Getting started with local development](https://designers.hubspot.com/tutorials/getting-started-with-local-development)_ articles for more information.
+
+
 ## How It's Made:
 
 **Tech used:** Hubl (HubSpots templating language), HTML, CSS, JavaScript, jQuery, and Three.js
