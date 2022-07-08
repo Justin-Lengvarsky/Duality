@@ -5,7 +5,7 @@ This project is a submission for the HubSpot Themes Challenge 2021 Hackathon. Th
 Hackathon overview: https://hubspot.devpost.com
 
 
-**Link to project:** http://hubspot-developers-wz43ci-21079035.hs-sites.com/_hcms/raw-resource?path=three-js/templates/Landing-Home-Page.html&portalId=21079035&t=1644634386644&hsLang=en%20http://hubspot-developers-wz43ci-21079035.hs-sites.com/_hcms/raw-resource?path=three-js/templates/Landing-Home-Page.html&portalId=21079035&t=1644634386644&hsLang=en
+**Link to project:** http://hubspot-developers-wz43ci-21079035.hs-sites.com/duality
 
 See CMS functionality: (https://youtu.be/YzVp0PwcNuQ)
 
