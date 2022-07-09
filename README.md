@@ -1,13 +1,13 @@
 # Duality
 
-This project is a submission for the HubSpot Themes Challenge 2021 Hackathon. This submission acts as a collection of landing pages and support pages for Hubspot's CMS marketplace. I developed everything except for the Three.js orb on the front page.
+This project is a submission for the HubSpot Themes Challenge 2021 Hackathon. This submission acts as a collection of landing pages and support pages for Hubspot's CMS marketplace. I developed everything except for the Three.js orb on the front page. I'm unable to give people access to the CMS funcitonality unless they follow the below steps and create a hubspot account, so please see the attached video link: https://youtu.be/YzVp0PwcNuQ
 
 Hackathon overview: https://hubspot.devpost.com
 
 
 **Link to project:** http://hubspot-developers-wz43ci-21079035.hs-sites.com/duality
 
-See CMS functionality: (https://youtu.be/YzVp0PwcNuQ)
+See CMS functionality: https://youtu.be/YzVp0PwcNuQ
 
 
 ![Duality home page](https://res.cloudinary.com/duf8g2rbv/image/upload/v1644717586/Screen_Shot_2022-02-12_at_7.57.04_PM_lacofr.png)
