@@ -12,6 +12,10 @@ See CMS functionality: https://youtu.be/YzVp0PwcNuQ
 
 ![Duality home page](https://res.cloudinary.com/duf8g2rbv/image/upload/v1644717586/Screen_Shot_2022-02-12_at_7.57.04_PM_lacofr.png)
 
+<a target="_blank" href="http://hubspot-developers-wz43ci-21079035.hs-sites.com/duality">
+    <img src="https://user-images.githubusercontent.com/87950479/178039636-54504b98-4ad8-488b-bf02-1380e8e4f109.gif" width="100%" alt="CMS App"/>
+</a>
+
 
 ## How to Launch
 
